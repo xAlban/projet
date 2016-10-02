@@ -22,4 +22,4 @@ test:
 
 production:
   <<: *default
-database: production_db
+database: :production_db
