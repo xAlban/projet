@@ -6,7 +6,7 @@ end
 group :production do
   gem 'pg'
 end
-
+gem 'ruby 2.2.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 gem 'rails_12factor'
