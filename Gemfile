@@ -7,6 +7,7 @@ gem 'rails', '4.1.6'
 
 group :development, :test do
   gem "sqlite3"
+  gem 'vcr', '~> 3.0', '>= 3.0.3'
 end
 
 group :production do
