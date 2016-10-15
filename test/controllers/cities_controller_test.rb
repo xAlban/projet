@@ -35,8 +35,10 @@ class CitiesControllerTest < ActionController::TestCase
   end
 
   test "should update city" do
-    patch :update, id: @city, city: { lat: @city.lat, lon: @city.lon, name: @city.name }
-    assert_redirected_to city_path(assigns(:city))
+    VCR.use_cassette("nominatim") do
+      patch :update, id: @city, city: { lat: @city.lat, lon: @city.lon, name: @city.name }
+      assert_redirected_to city_path(assigns(:city))
+    end
   end
 
   test "should destroy city" do
