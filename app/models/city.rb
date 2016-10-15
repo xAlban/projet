@@ -1,5 +1,8 @@
 class City < ActiveRecord::Base
-  before_create :geocode
+  validates :lat, presence: true
+  validates :lon, presence: true
+  
+  before_validation :geocode
   
   private
   
