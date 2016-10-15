@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://nominatim.openstreetmap.org/search?city=MyString&email=sebastien.gadot%40utbm.fr&format=json&limit=1
+    uri: http://nominatim.openstreetmap.org/search?city=MyString&email=a.elezi68%40gmail.com&format=json&limit=1
     body:
       encoding: US-ASCII
       string: ''
