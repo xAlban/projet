@@ -1,6 +1,4 @@
 class City < ActiveRecord::Base
-  validates :lat, presence: true
-  validates :lon, presence: true
   
   before_validation :geocode
   
