@@ -20,6 +20,9 @@ end
 # geocoding
 gem 'nominatim', '~> 0.0.5'
 
+#weather
+gem 'forecast_io'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
