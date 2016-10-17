@@ -21,7 +21,7 @@ end
 gem 'nominatim', '~> 0.0.5'
 
 #weather
-gem 'forecast_io'
+gem 'forecast_io', '~> 2.0', '>= 2.0.1'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'

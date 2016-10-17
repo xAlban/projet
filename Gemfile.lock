@@ -128,7 +128,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
-  forecast_io
+  forecast_io (~> 2.0, >= 2.0.1)
   jbuilder (~> 2.0)
   jquery-rails
   nominatim (~> 0.0.5)
