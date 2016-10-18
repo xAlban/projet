@@ -1,13 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Temperature:</strong>
-  <%=  @forecasts[:temperature] %>
-</p>
 
-<p>
   <strong>Name:</strong>
   <%= @city.name %>
+  <strong>-</strong>
+  <%=  @forecasts[:temperature] %>
+  <strong>°C</strong>
 </p>
 
 <p>
