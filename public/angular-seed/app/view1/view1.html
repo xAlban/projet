@@ -1,25 +1,15 @@
 <p>This is the partial for view 1.</p>
 
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-2">
-      <!--Sidebar content-->
+    Search Student: <input ng-model="$ctrl.query" />
 
-      Search Student: <input ng-model="$ctrl.query" />
-
-    </div>
-    <div class="col-md-10">
-      <!--Body content-->
 
 
       <ul class="student">
-        <li ng-repeat="student in students | filter:$ctrl.query">
+        <li ng-repeat="student in students | filter: $ctrl.query">
           <span>{{student.name}}</span>
           <p>{{student.surname}}</p>
         </li>
       </ul>
 
     </div>
-  </div>
-</div>
