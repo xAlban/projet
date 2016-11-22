@@ -13,5 +13,23 @@ class CityTest < ActiveSupport::TestCase
       incorrect = City.new name: cities(:one).name
       assert incorrect.valid?
     end
-  end  
+  end
+  
+  test 'weather forecast' do 
+    VCR.use_cassette("weather") do 
+      weather = cities(:one).weather
+      puts weather
+      assert weather
+
+    end
+  end
+  
+  test 'weather forecast2' do 
+    VCR.use_cassette("weather2") do 
+      weather = cities(:two).weather
+      
+      assert weather == 'unknown'
+
+    end
+  end
 end

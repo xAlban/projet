@@ -3,17 +3,19 @@ class City < ActiveRecord::Base
   before_validation :geocode
   public 
   
-   def forecast_io
-		 
-    forecast = ForecastIO.forecast(self.lat, self.lon, params: { units: 'si'})
-    results = {}
+   def weather
+		if self.lat
+	    forecast = ForecastIO.forecast(self.lat, self.lon, params: { units: 'si'})
+    	results = {}
 		 if forecast
 			results[:temperature] = forecast.currently.temperature
 			results[:summary] = forecast.currently.summary
-			results[:windSpeed] = forecast.currently.windSpeed
 		 end
     results
-   end
+		else
+			'unknown'
+		end
+	 end
   
   private
   
