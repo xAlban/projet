@@ -10,7 +10,8 @@ group :development, :test do
   gem 'spring' 
   # Use sqlite3 as the database for Active Record
   gem "sqlite3"
-  
+  gem "simplecov"
+  gem "codeclimate-test-reporter", "~> 1.0.0"
   gem 'vcr', '~> 3.0', '>= 3.0.3'
 end
 
