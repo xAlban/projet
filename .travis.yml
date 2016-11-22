@@ -7,3 +7,6 @@ deploy:
   api_key:
     secure: e5cd9f40-cfa8-4259-92de-ef2fb1cef542
   app: salty-fortress-48990
+addons:
+  code_climate:
+    repo_token: fd7bf64d7f20452f85015c509b60a90a2e654037d3378fa33f8b433661dfff67
