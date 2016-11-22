@@ -1,0 +1,33 @@
+languages:
+
+ Ruby: true
+
+ JavaScript: true
+
+ PHP: true
+
+ Python: true
+
+exclude_paths:
+
+- "public/angular-seed/app/bower_components/angular-mocks/angular-mocks.js"
+
+- "public/angular-seed/app/bower_components/angular-loader/angular-loader.js"
+
+- "public/angular-seed/app/bower_components/angular/angular.js"
+
+- "public/angular-seed/app/bower_components/angular-route/angular-route.js"
+
+- "public/angular-seed/app/bower_components/angular-resource/angular-resource.js"
+
+- "public/angular-seed/app/bower_components/html5-boilerplate/dist/js/plugins.js"
+
+- "public/angular-seed/app/bower_components/html5-boilerplate/src/js/plugins.js"
+
+- "public/angular-seed/app/bower_components/html5-boilerplate/test/file_content.js"
+
+- "public/angular-seed/e2e-tests/scenarios.js"
+
+- "public/angular-seed/app/view2/view2_test.js"
+
+- "public/angular-seed/app/Students/view1_test.js"
