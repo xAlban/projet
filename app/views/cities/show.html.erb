@@ -1,8 +1,6 @@
 <p id="notice"><%= notice %></p>
-
-<p>
-
-  <strong>Name:</strong>
+<h2>
+    <strong>Name:</strong>
   <%= @city.name %>
   <strong>-</strong>
   <%=  @forecasts[:temperature] %>
@@ -18,6 +16,10 @@
   <strong>Lon:</strong>
   <%= @city.lon %>
 </p>
+</h2>
+<p>
+
+
 
 <%= link_to 'Edit', edit_city_path(@city) %> |
 <%= link_to 'Back', cities_path %>
