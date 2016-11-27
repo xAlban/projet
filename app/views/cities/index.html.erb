@@ -18,11 +18,9 @@
         <td><%= city.name %></td>
         <td><%= city.lat %></td>
         <td><%= city.lon %></td>
-          <div class="btn-toolbar">
             <td><%= link_to 'Details', city, :class => "btn btn-info"%></td>
             <td><%= link_to 'Edit', edit_city_path(city), :class => "btn btn-info"%></td>
-            <td><%= link_to 'Destroy', city, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-info"%></td>
-          </div>
+            <td><%= link_to 'Destroy', city, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-info"%, ></td>
       </tr>
     <% end %>
   </tbody>
