@@ -16,9 +16,9 @@
         <td><%= student.name %></td>
         <td><%= student.surname %></td>
         <td><%= student.birthday %></td>
-        <td><%= link_to 'Show', student , :class => "btn btn-info"%></td>
-        <td><%= link_to 'Edit', edit_student_path(student) , :class => "btn btn-info"%></td>
-        <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } , :class => "btn btn-info"%></td>
+        <td><%= link_to 'Show', student , :class => "btn btn-primary"%></td>
+        <td><%= link_to 'Edit', edit_student_path(student), :class => "btn btn-primary"%></td>
+        <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } , :class => "btn btn-danger"%></td>
       </tr>
     <% end %>
   </tbody>

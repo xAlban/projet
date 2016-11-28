@@ -20,7 +20,7 @@
         <td><%= city.lon %></td>
             <td><%= link_to 'Details', city, :class => "btn btn-primary"%></td>
             <td><%= link_to 'Edit', edit_city_path(city), :class => "btn btn-primary"%></td>
-            <td><%= link_to 'Destroy', city, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-primary"%></td>
+            <td><%= link_to 'Destroy', city, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger"%></td>
       </tr>
     <% end %>
   </tbody>
