@@ -27,6 +27,8 @@ gem 'forecast_io', '~> 2.0', '>= 2.0.1'
 
 #Omniauth Github
 gem 'omniauth-github', '~> 1.1', '>= 1.1.2'
+gem 'rest_client'
+gem 'sinatra'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 3.2'

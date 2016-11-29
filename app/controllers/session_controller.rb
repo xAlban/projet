@@ -4,6 +4,4 @@ class SessionController < ApplicationController
 
      render text: request.env['omniauth.auth'].to_yaml
 
-  end
-
 end
