@@ -25,6 +25,9 @@ gem 'nominatim', '~> 0.0.5'
 #weather
 gem 'forecast_io', '~> 2.0', '>= 2.0.1'
 
+#Omniauth Github
+gem 'omniauth-github', '~> 1.1', '>= 1.1.2'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 3.2'
 gem 'bootstrap-sass', '~> 3.3.6' 
